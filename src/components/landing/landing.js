@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import Grid from '@material-ui/core/Grid';
-import pic from './seung.jpeg';
 import './landing.css'
-
+import Header from '../header/header'
+import MyPic from '../../images/mypic.jpg'
+import Contact from '../contact/contact'
 
 
 class Landing extends Component {
@@ -11,27 +12,24 @@ class Landing extends Component {
     render () {
         return(
             <div style={{width: '100%', margin:'auto'}}>
+                <Header/>
                 <Grid container spacing={3} className="landing-grid">
                     <Grid item xs={12}>
-                        <img src={pic} className="avatar"/>
+                        <img alt="avatar"
+                             className="avatar"
+                             src={MyPic}
+                        />
+
                         <div className="banner-text">
-                            <h1>Full Stack Web Developer</h1>
+                            <h3>Full Stack Web Developer</h3>
 
                             <hr />
-
                             <p>C++ | Python | React.js | Redux | NodeJS | Express | MYSQL | HTML/CSS </p>
-                            <div className="social-links">
-                                <a href="http:/google.com" rel="noopener noreferrer" target="_blank">
-                                    <i className="fa fa-linkedin-square" aria_hidden="true"/> 
-                                </a>
-
-                                <a href="http:/google.com" rel="noopener noreferrer" target="_blank">
-                                    <i className="fa fa-github-square" aria_hidden="true"/> 
-                                </a>
-                            </div>
                         </div>
                     </Grid>
                 </Grid>
+                <Contact/>
+
             </div>
         )
     }

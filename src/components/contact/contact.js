@@ -3,12 +3,8 @@ import './contact.css'
 import { withStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import ListItemAvatar from '@material-ui/core/ListItemAvatar';
-import Avatar from '@material-ui/core/Avatar';
-import EmailIcon from '@material-ui/icons/Email';
-import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import Header from '../header/header'
+import BackgroundImage from '../../images/landing.jpg'
 const styles = theme => ({
     root: {
         width: '100%',
@@ -30,19 +26,13 @@ class Contact extends Component {
                 <div className="contact-body">
                         <div className="contact-grid">
                             <div className="left-side">
-                            <h2>Seungjin</h2>
-                            <img
-                                src="http2://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
-                                alt="myPicture"
-                                style={{height:'250px'}}
-                            />
+                            <h2>About me</h2>
                             <p style={{width: '75%', margin:'auto', paddingTop:'1em'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries </p>
                             </div>
 
-
                             <div className="right-side">
                                 <h2>Contact Me</h2>
-                                <hr/>
+                                
                                 <div className="contact-list">
                                     <List className={classes.root}>
                                     <ListItem>

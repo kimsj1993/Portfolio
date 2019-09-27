@@ -1,7 +1,33 @@
-.header-color {
-    background: #7F7FD5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 25rem;
+.header {
+
+    background-size: cover;
+    
+}
+
+.nav {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    margin-left: 1em;
+}
+
+.title {
+    color: black;
+    font-size: 1.6rem;
+}
+.title:hover {
+    color: #607d8b;
+    text-decoration: none;
+
+}
+
+.link {
+    color: black;
+    height: 100%;
+}
+.link:hover {
+    text-decoration: none;
+    color: #263238;
+    background-color: #eceff1;
     
 }

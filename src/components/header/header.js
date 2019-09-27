@@ -1,57 +1,39 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+
 import {Link} from 'react-router-dom';
+import { withRouter } from "react-router-dom";
 import './header.css'
+import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
 
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
-  link: {
-      color: '#FFF',
-      textDecoration: 'none',
-      marginRight: theme.spacing(2)
+
+
+function Header(props) {
+
+  function handleClick  ()  {
+    
+    props.history.push('/');
+      
   }
-}));
-
-function Header() {
-  const classes = useStyles();
 
   return (
-<div className={classes.root}>
-      <AppBar position="static" className="header-color">
-        <Toolbar >
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            Title
-          </Typography>
-          <Button color="inherit"><Link className={classes.link} to='/resume'>Resume</Link></Button>
-          <Button color="inherit"><Link className={classes.link} to='/about'>About Me</Link></Button>
-          <Button color="inherit"><Link className={classes.link} to='/projects'>Projects</Link></Button>
-          <Button color="inherit"><Link className={classes.link} to='/contact'>Contact</Link></Button>
+        <div className="header" >
+          <Navbar collapseOnSelect expand="sm" className="nav" variant="dark">
+            <Navbar.Brand ><Link to="/" className="title">SEUNGJIN KIM</Link></Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="mr-auto">
+              </Nav>
+              <Nav>
+                <Nav.Link><Link to="/projects" className="link">PROJECTS</Link></Nav.Link>
+                <Nav.Link eventKey={2} ><Link to="/about" className="link">ABOUT ME</Link></Nav.Link>
+                <Nav.Link eventKey={2} ><Link to="/contact" className="link">CONTACT</Link></Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar>
 
-        </Toolbar>
-      </AppBar>
-
-      
-
-    </div>
+        </div>
   );
 }
 
-export default Header;
+export default withRouter(Header);
