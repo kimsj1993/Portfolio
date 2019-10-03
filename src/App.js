@@ -17,9 +17,8 @@ function App() {
     <div>
       <BrowserRouter> 
         <Route exact path = "/" component = {Landing} />
-        <Route path = "/contact" component = {Contact} />
-        <Route path = "/projects" component = {Projects} />
         <Route path = "/resume" component = {Resume} />
+        <Route path = "/projects" component = {Projects} />
 
       </BrowserRouter>
       

@@ -60,7 +60,8 @@ class Projects extends Component {
             case 0:
                 return (
                     <div className="projects-grid">
-                    <Project  color={"info"} url={"https://github.com/kimsj1993/Father-s-web-server"} language={"React"} title={"Portfolio"} body={"This is developed using several thing such as you liek"} />
+                    <Project  className="project" color={"info"} url={"https://github.com/kimsj1993/Father-s-web-server"} language={"React"} title={"Portfolio"} body={"This is developed using several thing such as you liek"} />
+                    
                     <Project  color={"info"} language={"React"} title={"Portfolio"} body={"This is developed using several thidlskajdaslkjaslkjdasldkasjdsalkjdas lkjdsalkdasjdalskjdas lkdjsaldaskjdsalkjdaslkdjas ladskjasdlkjadsng such as you liek"} />
 
 

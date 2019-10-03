@@ -1,3 +1,5 @@
+@import url("../../animation.css");
+
 .projects-grid {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -7,4 +9,13 @@
 
     grid-template-columns: repeat(3, minmax(230px, 1fr));
 
+}
+
+.project {
+    animation-name: flipInX;
+    animation-duration: 1.3s;
+
+}
+.project:hover {
+    transform: scale(1.1);
 }

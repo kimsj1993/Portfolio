@@ -25,9 +25,8 @@ function Header(props) {
               <Nav className="mr-auto">
               </Nav>
               <Nav>
+              <Nav.Link eventKey={2} ><Link to="/resume" className="link">RESUME</Link></Nav.Link>
                 <Nav.Link><Link to="/projects" className="link">PROJECTS</Link></Nav.Link>
-                <Nav.Link eventKey={2} ><Link to="/resume" className="link">RESUME</Link></Nav.Link>
-                <Nav.Link eventKey={2} ><Link to="/contact" className="link">CONTACT</Link></Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
