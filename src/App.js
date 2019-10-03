@@ -3,9 +3,8 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 import Landing from './components/landing/landing';
 import Contact from './components/contact/contact';
-import About from './components/aboutme';
 import Projects from './components/projects/projects';
-import Resume from './components/resume';
+import Resume from './components/resume/resume';
 
 
 
@@ -18,7 +17,6 @@ function App() {
     <div>
       <BrowserRouter> 
         <Route exact path = "/" component = {Landing} />
-        <Route path = "/about" component = {About} />
         <Route path = "/contact" component = {Contact} />
         <Route path = "/projects" component = {Projects} />
         <Route path = "/resume" component = {Resume} />

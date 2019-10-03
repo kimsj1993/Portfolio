@@ -19,10 +19,8 @@ class Landing extends Component {
                              className="avatar"
                              src={MyPic}
                         />
-
                         <div className="banner-text">
                             <h3>Full Stack Web Developer</h3>
-
                             <hr />
                             <p>C++ | Python | React.js | Redux | NodeJS | Express | MYSQL | HTML/CSS </p>
                         </div>
